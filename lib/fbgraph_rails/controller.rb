@@ -50,6 +50,6 @@ module ControllerInstanceMethods
   end
 end
 
-ActiveController::Base.send :include, ControllerMixin
+ActionController::Base.send :include, ControllerMixin
 
 end  # namespace FBGraphRails

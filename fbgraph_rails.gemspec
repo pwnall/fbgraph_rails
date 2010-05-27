@@ -15,11 +15,30 @@ Gem::Specification.new do |s|
   s.extra_rdoc_files = [
     "README"
   ]
+  s.files = [
+    ".gitignore",
+     ".project",
+     "MIT-LICENSE",
+     "README",
+     "Rakefile",
+     "VERSION",
+     "fbgraph_rails.gemspec",
+     "lib/app/controllers/sessions_controller.rb",
+     "lib/fbgraph_rails.rb",
+     "lib/fbgraph_rails/controller.rb",
+     "lib/fbgraph_rails/fbgraph.rb",
+     "test/fbgraph_rails_test.rb",
+     "test/test_helper.rb"
+  ]
   s.homepage = %q{http://github.com/costan/fbgraph_rails}
   s.rdoc_options = ["--charset=UTF-8"]
   s.require_paths = ["lib"]
   s.rubygems_version = %q{1.3.6}
   s.summary = %q{Rails plug-in for integrating the fbgraph gem}
+  s.test_files = [
+    "test/fbgraph_rails_test.rb",
+     "test/test_helper.rb"
+  ]
 
   if s.respond_to? :specification_version then
     current_version = Gem::Specification::CURRENT_SPECIFICATION_VERSION
