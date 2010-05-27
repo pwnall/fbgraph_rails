@@ -23,10 +23,9 @@ Gem::Specification.new do |s|
      "Rakefile",
      "VERSION",
      "fbgraph_rails.gemspec",
-     "lib/app/controllers/sessions_controller.rb",
      "lib/fbgraph_rails.rb",
      "lib/fbgraph_rails/controller.rb",
-     "lib/fbgraph_rails/fbgraph.rb",
+     "lib/fbgraph_rails/engine.rb",
      "test/fbgraph_rails_test.rb",
      "test/test_helper.rb"
   ]
@@ -45,17 +44,20 @@ Gem::Specification.new do |s|
     s.specification_version = 3
 
     if Gem::Version.new(Gem::RubyGemsVersion) >= Gem::Version.new('1.2.0') then
+      s.add_runtime_dependency(%q<erubis>, [">= 2.3.5"])
       s.add_runtime_dependency(%q<fbgraph>, [">= 0.0.5"])
       s.add_runtime_dependency(%q<json>, [">= 1.4.2"])
       s.add_runtime_dependency(%q<oauth2>, [">= 0.0.8"])
       s.add_development_dependency(%q<jeweler>, [">= 1.4.0"])
     else
+      s.add_dependency(%q<erubis>, [">= 2.3.5"])
       s.add_dependency(%q<fbgraph>, [">= 0.0.5"])
       s.add_dependency(%q<json>, [">= 1.4.2"])
       s.add_dependency(%q<oauth2>, [">= 0.0.8"])
       s.add_dependency(%q<jeweler>, [">= 1.4.0"])
     end
   else
+    s.add_dependency(%q<erubis>, [">= 2.3.5"])
     s.add_dependency(%q<fbgraph>, [">= 0.0.5"])
     s.add_dependency(%q<json>, [">= 1.4.2"])
     s.add_dependency(%q<oauth2>, [">= 0.0.8"])

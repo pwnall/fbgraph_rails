@@ -1,3 +1,5 @@
+require 'action_controller'
+
 # :nodoc: namespace
 module FBGraphRails
 
@@ -36,15 +38,15 @@ module ControllerInstanceMethods
     @facebook_client = if @current_facebook_access_token
       FBGraphRails.global_fbclient
     else
-      FBGraphRails.fbclient_with_token @current_facebook_access_token
+      FBGraphRails.fbclient @current_facebook_access_token
     end
   end
   
-  def enforce_facebook_access_token
-    facebook_access_token_probe
+  def enforce_facebook_access_token(redirect_url = request.url)
+    probe_facebook_access_token
     unless current_facebook_access_token
-      flash[:facebook_redirect_url] = request.url
-      redirect_to @facebook_client.authorize_url :redirect_uri => sessions_path
+      flash[:facebook_redirect_url] = redirect_url
+      redirect_to FBGraphRails.authorization_url(facebook_oauth_url)
       return false
     end
   end

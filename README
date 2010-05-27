@@ -1,13 +1,30 @@
 FbgraphRails
 ============
 
-Introduction goes here.
+Integrates the fbgraph gem for the Facebook OpenGraph API with Rails
+applications. Useful for session management.
 
 
-Example
+Installation
 =======
 
-Example goes here.
+Add the following to your controllers:
+
+  # Acts a like a before_filter.
+  requires_facebook_access_token :except => :new
+  # Also acts like a before_filter, but doesn't redirect to Facebook.
+  probes_facebook_access_token :except => :new
+
+The following methods become available to your controllers. 
+
+  # FBGraph client.
+  facebook_client
+
+  # The raw Facebook access token, or nil.
+  current_facebook_access_token
+
+  # Set the Facebook access token, e.g. when a different login method is used.
+  current_facebook_access_token=
 
 
-Copyright (c) 2010 [name of plugin creator], released under the MIT license
+Copyright (c) 2010 Victor Costan, released under the MIT license
