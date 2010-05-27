@@ -5,7 +5,7 @@ begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
     gem.name = "fbgraph_rails"
-    gem.summary = %Q{Rails plug-in for integrating the fbgraph gem}
+    gem.summary = %Q{Rails plug-in integrating the fbgraph gem}
     gem.description = %Q{Support for sessions tied to Facebook users.}
     gem.email = "victor@costan.us"
     gem.homepage = "http://github.com/costan/fbgraph_rails"

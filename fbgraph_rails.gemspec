@@ -22,10 +22,14 @@ Gem::Specification.new do |s|
      "README",
      "Rakefile",
      "VERSION",
+     "app/controllers/facebook_oauth_controller.rb",
+     "app/helpers/facebook_oauth_helper.rb",
+     "config/routes.rb",
      "fbgraph_rails.gemspec",
      "lib/fbgraph_rails.rb",
      "lib/fbgraph_rails/controller.rb",
      "lib/fbgraph_rails/engine.rb",
+     "lib/fbgraph_rails/fbgraph_client.rb",
      "test/fbgraph_rails_test.rb",
      "test/test_helper.rb"
   ]
