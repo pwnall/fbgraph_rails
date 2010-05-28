@@ -41,6 +41,7 @@ module ControllerInstanceMethods
       FBGraphRails.fbclient @current_facebook_access_token
     end
   end
+  private :probe_facebook_access_token
   
   def enforce_facebook_access_token(redirect_url = request.url)
     probe_facebook_access_token
@@ -50,6 +51,7 @@ module ControllerInstanceMethods
       return false
     end
   end
+  private :enforce_facebook_access_token
 end
 
 ActionController::Base.send :include, ControllerMixin
