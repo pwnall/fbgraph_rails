@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = %q{fbgraph_rails}
-  s.version = "0.0.1"
+  s.version = "0.1.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["costan"]
-  s.date = %q{2010-05-27}
+  s.date = %q{2010-05-28}
   s.description = %q{Support for sessions tied to Facebook users.}
   s.email = %q{victor@costan.us}
   s.extra_rdoc_files = [
@@ -37,7 +37,7 @@ Gem::Specification.new do |s|
   s.rdoc_options = ["--charset=UTF-8"]
   s.require_paths = ["lib"]
   s.rubygems_version = %q{1.3.6}
-  s.summary = %q{Rails plug-in for integrating the fbgraph gem}
+  s.summary = %q{Rails plug-in integrating the fbgraph gem}
   s.test_files = [
     "test/fbgraph_rails_test.rb",
      "test/test_helper.rb"
