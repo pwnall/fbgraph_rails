@@ -5,7 +5,7 @@ require 'rails'
 module FBGraphRails
 
 class Engine < Rails::Engine
-  # paths.app                 = "app"
+  paths.app                 = "app"
   paths.app.controllers     = "app/controllers"
   paths.app.helpers         = "app/helpers"
   paths.app.models          = "app/models"
