@@ -9,7 +9,7 @@ begin
     gem.description = %Q{Support for sessions tied to Facebook users.}
     gem.email = "victor@costan.us"
     gem.homepage = "http://github.com/costan/fbgraph_rails"
-    gem.authors = ["costan"]
+    gem.authors = ["Victor Costan"]
     gem.add_runtime_dependency "erubis", ">= 2.3.5"
     gem.add_runtime_dependency "fbgraph", ">= 0.0.5"
     gem.add_runtime_dependency "json", ">= 1.4.2"
