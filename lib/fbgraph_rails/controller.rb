@@ -60,7 +60,7 @@ ActionController::Base.send :include, ControllerMixin
 class ActionController::TestCase
   # Sets the authenticated user in the test session.
   def set_session_current_facebook_token(access_token)
-    @request.session[:current_facebook_token] = access_token
+    request.session[:current_facebook_token] = access_token
   end
 end
 
