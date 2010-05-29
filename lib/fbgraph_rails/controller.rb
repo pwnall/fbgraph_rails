@@ -30,11 +30,11 @@ module ControllerInstanceMethods
   
   def current_facebook_access_token=(new_token)
     @current_facebook_access_token = new_token
-    session[:facebook_token] = new_token
+    session[:current_facebook_token] = new_token
   end
 
   def probe_facebook_access_token
-    @current_facebook_access_token = session[:facebook_token]
+    @current_facebook_access_token = session[:current_facebook_token]
     @facebook_client = if @current_facebook_access_token
       FBGraphRails.global_fbclient
     else

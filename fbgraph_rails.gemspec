@@ -13,13 +13,12 @@ Gem::Specification.new do |s|
   s.description = %q{Support for sessions tied to Facebook users.}
   s.email = %q{victor@costan.us}
   s.extra_rdoc_files = [
-    "README"
+    "LICENSE",
+     "README.rdoc"
   ]
   s.files = [
     ".gitignore",
      ".project",
-     "MIT-LICENSE",
-     "README",
      "Rakefile",
      "VERSION",
      "app/controllers/facebook_oauth_controller.rb",
