@@ -17,7 +17,7 @@ module ControllerClassMethods
     before_filter :probe_facebook_access_token, options
   end
     
-  def requires_facebook_access_token
+  def requires_facebook_access_token(options = {})
     send :include, ControllerInstanceMethods    
     before_filter :enforce_facebook_access_token, options    
   end
