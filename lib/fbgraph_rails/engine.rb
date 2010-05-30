@@ -9,7 +9,6 @@ class Engine < Rails::Engine
   paths.app.controllers     = "app/controllers"
   paths.app.helpers         = "app/helpers"
   paths.app.models          = "app/models"
-  paths.app.metals          = "app/metal"
   paths.app.views           = "app/views"
   # paths.lib                 = "lib"
   # paths.lib.tasks           = "lib/tasks"
