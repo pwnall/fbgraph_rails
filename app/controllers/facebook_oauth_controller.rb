@@ -12,7 +12,7 @@ class FacebookOauthController < ApplicationController
     self.current_facebook_access_token =
         facebook_client.authorization.process_callback params[:code],
             :redirect_uri => facebook_oauth_url
-    redirect_to flash[:facebook_redirect_url]
+    redirect_to flash[:facebook_redirect_url] || root_url
   end
   
   # DELETE /facebook_oauth
