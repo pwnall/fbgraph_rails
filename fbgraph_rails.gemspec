@@ -5,43 +5,41 @@
 
 Gem::Specification.new do |s|
   s.name = %q{fbgraph_rails}
-  s.version = "0.1.5"
+  s.version = "0.1.6"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Victor Costan"]
-  s.date = %q{2010-05-30}
+  s.date = %q{2010-10-15}
   s.description = %q{Support for sessions tied to Facebook users.}
   s.email = %q{victor@costan.us}
   s.extra_rdoc_files = [
     "LICENSE",
-     "README.rdoc"
+    "README.rdoc"
   ]
   s.files = [
-    ".gitignore",
-     ".project",
-     "LICENSE",
-     "README.rdoc",
-     "Rakefile",
-     "VERSION",
-     "app/controllers/facebook_oauth_controller.rb",
-     "app/helpers/facebook_oauth_helper.rb",
-     "config/routes.rb",
-     "fbgraph_rails.gemspec",
-     "lib/fbgraph_rails.rb",
-     "lib/fbgraph_rails/controller.rb",
-     "lib/fbgraph_rails/engine.rb",
-     "lib/fbgraph_rails/fbgraph_client.rb",
-     "test/fbgraph_rails_test.rb",
-     "test/test_helper.rb"
+    ".project",
+    "LICENSE",
+    "README.rdoc",
+    "Rakefile",
+    "VERSION",
+    "app/controllers/facebook_oauth_controller.rb",
+    "app/helpers/facebook_oauth_helper.rb",
+    "config/routes.rb",
+    "fbgraph_rails.gemspec",
+    "lib/fbgraph_rails.rb",
+    "lib/fbgraph_rails/controller.rb",
+    "lib/fbgraph_rails/engine.rb",
+    "lib/fbgraph_rails/fbgraph_client.rb",
+    "test/fbgraph_rails_test.rb",
+    "test/test_helper.rb"
   ]
   s.homepage = %q{http://github.com/costan/fbgraph_rails}
-  s.rdoc_options = ["--charset=UTF-8"]
   s.require_paths = ["lib"]
   s.rubygems_version = %q{1.3.7}
   s.summary = %q{Rails plug-in integrating the fbgraph gem}
   s.test_files = [
     "test/fbgraph_rails_test.rb",
-     "test/test_helper.rb"
+    "test/test_helper.rb"
   ]
 
   if s.respond_to? :specification_version then
