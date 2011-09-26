@@ -1,3 +1,3 @@
-Rails::Application.routes.draw do |map|
+FBGraphRails::Engine.routes.draw do
   resource :facebook_oauth, :controller => 'FacebookOauth'
 end
