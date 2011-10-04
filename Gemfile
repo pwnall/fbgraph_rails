@@ -1,6 +1,6 @@
 source "http://rubygems.org"
 gem "erubis", ">= 2.7.0"
-gem "fbgraph", ">= 1.8.0"
+gem "fbgraph", ">= 1.8.3"
 gem "json", ">= 1.6.1"
 gem "oauth2", ">= 0.5.0"
 gem "rails", ">= 3.1.0"
